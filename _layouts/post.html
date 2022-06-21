@@ -17,6 +17,9 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+<script>
+document.title = "{{ page.title | escape }}";
+</script>
 <!-- 코스모스팜 소셜댓글 시작 -->
 <script id="cosmosfarm-comments-script" type="text/javascript" src="https://plugin.cosmosfarm.com/comments.js"></script>
 <div id="cosmosfarm-comments" data-plugin-id="1318302579224109" data-href="https://lee.neko.kro.kr{{ page.url }}" data-width="550" data-row="10"><a href="http://www.cosmosfarm.com/plugin/comments">코스모스팜 소셜댓글</a></div>
