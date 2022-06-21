@@ -13,8 +13,8 @@ layout: default
     };
     */
     var disqus_config = function () {
-    this.page.url = 'https://lee.neko.kro.kr{{ post.url }}';
-    this.page.identifier = '{{ post.id }}';
+    this.page.url = 'https://lee.neko.kro.kr{{ site.posts.last.url }}';
+    this.page.identifier = '{{ site.posts.last.id }}';
     };
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
