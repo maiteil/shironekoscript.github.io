@@ -17,30 +17,9 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-  <div id="disqus_thread"></div>
-  <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    var disqus_config = function () {
-    this.page.url = 'https://lee.neko.kro.kr{{ page.url }}';
-    this.page.identifier = '{{ page.id }}';
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://mytail.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</script>
-
+<!-- 코스모스팜 소셜댓글 시작 -->
+<script id="cosmosfarm-comments-script" type="text/javascript" src="https://plugin.cosmosfarm.com/comments.js"></script>
+<div id="cosmosfarm-comments" data-plugin-id="1318302579224109" data-href="https://lee.neko.kro.kr/{{ page.url }}" data-width="550" data-row="10"><a href="http://www.cosmosfarm.com/plugin/comments">코스모스팜 소셜댓글</a></div>
+<!-- 코스모스팜 소셜댓글 종료 -->
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
